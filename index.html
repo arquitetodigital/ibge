@@ -1,0 +1,2201 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apostila Concurso IBGE 2026 · Recenseador · Preparatório Completo</title>
+    <meta name="description" content="Prepare-se para a vaga de Recenseador do IBGE que paga até R$ 4.370 por mês, e chegue à prova com 500 questões resolvidas. Teoria, simulados e cronograma." />
+    <meta property="og:title" content="Apostila Concurso IBGE 2026 · Recenseador · Preparatório Completo" />
+    <meta property="og:description" content="Apostila completa das 3 matérias do edital, 500 questões Cesgranrio, simulados e cronograma até 31 de janeiro." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+
+    <style>
+      :root {
+        --background: #ffffff;
+        --foreground: #0f172a;
+        --primary: #1656b5;
+        --primary-light: #2b70d4;
+        --red-deep: #0f2b5c;
+        --navy-deep: #0e1726;
+        --muted: #f8fafc;
+        --muted-foreground: #64748b;
+        --border: #e2e8f0;
+        --emerald: #16a34a;
+        --emerald-hover: #15803d;
+        --emerald-glow: rgba(22, 163, 74, 0.4);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border-color: var(--border);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        color: var(--foreground);
+        background-color: var(--background);
+      }
+
+      body {
+        padding-top: 48px; /* Espaço para o topo fixo da urgência */
+        overflow-x: hidden;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Container */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .max-w-4xl { max-width: 56rem; margin-left: auto; margin-right: auto; }
+      .max-w-3xl { max-width: 48rem; margin-left: auto; margin-right: auto; }
+      .max-w-2xl { max-width: 42rem; margin-left: auto; margin-right: auto; }
+
+      /* Topo Fixo de Urgência */
+      #top-urgency-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: linear-gradient(90deg, #b91c1c, #dc2626, #b45309);
+        color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        padding: 8px 12px;
+      }
+      .urgency-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 8px 16px;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .countdown-boxes {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-family: ui-monospace, SFMono-Regular, monospace;
+        font-size: 13px;
+        font-weight: 700;
+        background: rgba(0,0,0,0.3);
+        padding: 4px 10px;
+        border-radius: 6px;
+        border: 1px solid rgba(255,255,255,0.2);
+      }
+      .cd-unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1;
+      }
+      .cd-sub {
+        font-family: 'Inter', sans-serif;
+        font-size: 8px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        margin-top: 2px;
+      }
+
+      /* Botões de compra verdes */
+      .btn-green {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: var(--emerald);
+        color: #ffffff !important;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 16px 32px;
+        border-radius: 9999px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 12px 30px var(--emerald-glow), 0 0 50px rgba(22, 163, 74, 0.2);
+        transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+        font-size: 16px;
+        width: 100%;
+        max-width: 440px;
+      }
+      .btn-green:hover {
+        background-color: var(--emerald-hover);
+        transform: scale(1.03);
+        box-shadow: 0 16px 40px rgba(22, 163, 74, 0.5);
+      }
+      .btn-outline-white {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background: transparent;
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 14px 28px;
+        border-radius: 9999px;
+        border: 2px solid rgba(255,255,255,0.4);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        width: 100%;
+        font-size: 14px;
+      }
+      .btn-outline-white:hover {
+        border-color: #ffffff;
+        background: rgba(255,255,255,0.1);
+      }
+
+      /* Sections styling */
+      .section-light {
+        background: var(--background);
+        color: var(--foreground);
+        padding: 80px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .section-light-alt {
+        background: #f8fafc;
+        color: var(--foreground);
+        padding: 80px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .section-dark {
+        background: linear-gradient(180deg, var(--red-deep), #0b1e42);
+        color: #ffffff;
+        padding: 80px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      /* Text gradients & badges */
+      .text-gradient-hero {
+        background: linear-gradient(135deg, #ffffff, #77b5f8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .text-gradient-red {
+        background: linear-gradient(135deg, var(--primary), var(--red-deep));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .badge-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background-color: var(--primary);
+        color: #ffffff;
+        padding: 8px 18px;
+        border-radius: 9999px;
+        font-size: 13px;
+        font-weight: 700;
+        box-shadow: 0 8px 25px rgba(22, 86, 181, 0.4);
+      }
+      .badge-light {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(22, 86, 181, 0.1);
+        color: var(--primary);
+        padding: 6px 14px;
+        border-radius: 9999px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 16px;
+      }
+
+      /* Pulse badge animation */
+      @keyframes pulse-badge {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.04); }
+      }
+      .animate-pulse-badge {
+        animation: pulse-badge 2s ease-in-out infinite;
+      }
+
+      /* Floating Ambient Orbs */
+      .ambient-orb {
+        position: fixed;
+        border-radius: 9999px;
+        pointer-events: none;
+        z-index: -1;
+      }
+      .ambient-orb-1 {
+        width: 600px;
+        height: 600px;
+        top: 10%;
+        left: -10%;
+        background: radial-gradient(circle, rgba(22, 86, 181, 0.18) 0%, transparent 70%);
+        filter: blur(100px);
+        animation: floatOrb 20s ease-in-out infinite;
+      }
+      .ambient-orb-2 {
+        width: 500px;
+        height: 500px;
+        bottom: 10%;
+        right: -10%;
+        background: radial-gradient(circle, rgba(15, 43, 92, 0.15) 0%, transparent 70%);
+        filter: blur(80px);
+        animation: floatOrb 15s ease-in-out infinite reverse;
+      }
+      @keyframes floatOrb {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(3deg); }
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #ffffff;
+        padding: 80px 16px;
+        overflow: hidden;
+      }
+      .hero-bg-img {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        z-index: -3;
+      }
+      .hero-gradient-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(15, 43, 92, 0.88) 0%, rgba(22, 86, 181, 0.78) 40%, rgba(14, 23, 38, 0.96) 100%);
+        z-index: -2;
+      }
+      .hero-vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.65) 100%);
+        z-index: -1;
+      }
+
+      /* Typography */
+      h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.02em; }
+      .hero-title {
+        font-size: clamp(2rem, 4.5vw, 3.6rem);
+        line-height: 1.15;
+        margin-bottom: 24px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .section-title {
+        font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .section-subtitle {
+        color: var(--muted-foreground);
+        font-size: 17px;
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto 48px;
+      }
+      .section-dark .section-subtitle {
+        color: rgba(255,255,255,0.8);
+      }
+
+      /* Shadows & Cards */
+      .premium-shadow {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 10px 40px rgba(11, 46, 91, 0.08);
+      }
+      .card-white {
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+      }
+
+      /* Raio-X Cards */
+      .raiox-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        margin-bottom: 32px;
+      }
+      .raiox-card {
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+      .raiox-card:hover { transform: translateY(-4px); }
+      .raiox-num {
+        font-size: 44px;
+        font-weight: 800;
+        font-family: ui-monospace, monospace;
+        color: var(--foreground);
+        margin-bottom: 8px;
+        line-height: 1;
+      }
+      .raiox-card.highlight {
+        border: 2px solid var(--primary);
+        background: rgba(22, 86, 181, 0.04);
+        position: relative;
+        overflow: hidden;
+      }
+      .raiox-card.highlight .raiox-num { color: var(--primary); }
+      .tag-corner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: var(--primary);
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        border-bottom-left-radius: 8px;
+      }
+
+      /* Balões de Fala (Dor) */
+      .dores-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .speech-bubble {
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 22px;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      }
+      .speech-quote {
+        font-size: 32px;
+        line-height: 1;
+        font-family: Georgia, serif;
+        color: var(--primary);
+        font-weight: bold;
+      }
+      .speech-text {
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic;
+        color: var(--foreground);
+      }
+
+      /* Jornada Timeline Vertical (01 a 05) */
+      .timeline-wrap {
+        position: relative;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .timeline-line {
+        position: absolute;
+        top: 24px;
+        bottom: 24px;
+        left: 20px;
+        width: 2px;
+        background: var(--border);
+      }
+      @media (min-width: 640px) {
+        .timeline-line { left: 24px; }
+      }
+      .timeline-item {
+        position: relative;
+        padding-left: 56px;
+        margin-bottom: 28px;
+      }
+      @media (min-width: 640px) {
+        .timeline-item { padding-left: 72px; }
+      }
+      .timeline-badge {
+        position: absolute;
+        left: 0;
+        top: 14px;
+        width: 40px;
+        height: 40px;
+        border-radius: 9999px;
+        background: var(--primary);
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--primary);
+        box-shadow: 0 4px 10px rgba(22, 86, 181, 0.3);
+      }
+      @media (min-width: 640px) {
+        .timeline-badge { width: 48px; height: 48px; font-size: 16px; }
+      }
+      .timeline-card {
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 22px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 10px 40px rgba(11, 46, 91, 0.05);
+      }
+      .timeline-action {
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--primary);
+        margin-bottom: 4px;
+      }
+      .timeline-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .timeline-desc {
+        font-size: 14px;
+        color: var(--muted-foreground);
+        line-height: 1.6;
+      }
+
+      /* Carrossel Estilo Rolagem Original (3 Páginas Visíveis no Desktop + Destaque Central) */
+      #material-visual {
+        background-color: #f8fafc;
+        overflow: hidden;
+        padding: 80px 0;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+      .carousel-wrapper {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      .carousel-viewport {
+        overflow: hidden;
+        width: 100%;
+        padding: 36px 0;
+        cursor: grab;
+      }
+      .carousel-viewport:active {
+        cursor: grabbing;
+      }
+      .carousel-track {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+        will-change: transform;
+      }
+      .carousel-slide-item {
+        flex: 0 0 85%;
+        min-width: 0;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+        transform: scale(0.90);
+        opacity: 0.55;
+        user-select: none;
+        cursor: pointer;
+      }
+      @media (min-width: 768px) {
+        .carousel-slide-item {
+          flex: 0 0 calc(33.333% - 16px); /* Exatamente 3 páginas visíveis lado a lado no desktop */
+          transform: scale(0.88);
+          opacity: 0.5;
+        }
+      }
+      .carousel-card {
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e2e8f0;
+        transition: all 0.4s ease;
+      }
+      .carousel-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+        display: block;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      }
+      .carousel-caption-tag {
+        margin-top: 10px;
+        padding: 8px 12px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #1e293b;
+        text-align: center;
+        background: #f1f5f9;
+        border-radius: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: all 0.3s ease;
+      }
+      /* PÁGINA DO MEIO EM GRANDE DESTAQUE */
+      .carousel-slide-item.active-center {
+        transform: scale(1.08);
+        opacity: 1;
+        z-index: 10;
+      }
+      .carousel-slide-item.active-center .carousel-card {
+        border: 2px solid var(--primary);
+        box-shadow: 0 25px 50px -12px rgba(22, 86, 181, 0.35), 0 0 0 4px rgba(22, 86, 181, 0.15);
+      }
+      .carousel-slide-item.active-center .carousel-caption-tag {
+        background: var(--primary);
+        color: #ffffff;
+      }
+
+      /* Botões de navegação idênticos ao site original */
+      .carousel-nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 9999px;
+        background: #ffffff;
+        color: #0f172a;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 20;
+        transition: all 0.25s ease;
+      }
+      .carousel-nav-btn:hover {
+        background: var(--primary);
+        color: #ffffff;
+        transform: translateY(-50%) scale(1.08);
+        box-shadow: 0 14px 28px rgba(22, 86, 181, 0.3);
+      }
+      .carousel-prev-btn {
+        left: -8px;
+      }
+      .carousel-next-btn {
+        right: -8px;
+      }
+      @media (min-width: 1024px) {
+        .carousel-prev-btn { left: -24px; }
+        .carousel-next-btn { right: -24px; }
+      }
+
+      /* Indicadores / Dots */
+      .carousel-dots-container {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 18px;
+      }
+      .carousel-dot-btn {
+        width: 10px;
+        height: 10px;
+        border-radius: 9999px;
+        background: #cbd5e1;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .carousel-dot-btn.active {
+        width: 32px;
+        background: var(--primary);
+      }
+
+      /* Planos & Pricing */
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        max-width: 960px;
+        margin: 0 auto;
+        align-items: stretch;
+      }
+      @media (min-width: 768px) {
+        .pricing-grid {
+          grid-template-columns: 1.15fr 0.95fr;
+        }
+      }
+      .plan-card {
+        border-radius: 24px;
+        padding: 32px 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .plan-combo {
+        background: rgba(255,255,255,0.1);
+        border: 2px solid #34d399;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        order: 1; /* Combo Primeiro no celular! */
+      }
+      @media (min-width: 768px) {
+        .plan-combo { order: 2; transform: scale(1.03); }
+      }
+      .plan-apostila {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+        order: 2; /* Apostila segundo no celular */
+      }
+      @media (min-width: 768px) {
+        .plan-apostila { order: 1; }
+      }
+      .selo-mais-escolhido {
+        position: absolute;
+        top: -14px;
+        right: 24px;
+        background: #10b981;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 4px 14px;
+        border-radius: 9999px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        letter-spacing: 0.05em;
+      }
+
+      /* Accordion FAQ */
+      .faq-item {
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        transition: border-color 0.2s;
+      }
+      .faq-header {
+        padding: 18px 24px;
+        width: 100%;
+        background: none;
+        border: none;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--foreground);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      .faq-icon {
+        transition: transform 0.2s ease;
+        font-size: 14px;
+        color: var(--primary);
+      }
+      .faq-item.open .faq-icon { transform: rotate(180deg); }
+      .faq-body {
+        display: none;
+        padding: 0 24px 20px;
+        color: var(--muted-foreground);
+        font-size: 15px;
+        line-height: 1.6;
+        border-top: 1px solid rgba(0,0,0,0.05);
+      }
+      .faq-item.open .faq-body { display: block; }
+
+      /* Barra Flutuante Mobile */
+      #mobile-floating-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        background: rgba(14, 23, 38, 0.96);
+        backdrop-filter: blur(10px);
+        padding: 12px 16px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        display: none;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+      }
+      #mobile-floating-bar.show { transform: translateY(0); }
+      @media (max-width: 640px) {
+        #mobile-floating-bar { display: block; }
+      }
+
+      /* Modal de Checkout / Links */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(6px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: 16px;
+      }
+      .modal-box {
+        background: #ffffff;
+        border-radius: 20px;
+        max-width: 480px;
+        width: 100%;
+        padding: 28px;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      }
+
+      /* Popup de Upsell em Tela Única (Zero Rolagem) */
+      .upsell-modal-box {
+        background: #0d1726;
+        border: 2px solid #10b981;
+        border-radius: 20px;
+        max-width: 460px;
+        width: 100%;
+        padding: 20px 20px 16px;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.85), 0 0 30px rgba(16, 185, 129, 0.25);
+        color: #ffffff;
+        position: relative;
+        text-align: center;
+        overflow: hidden; /* SEM NENHUMA ROLAGEM */
+        margin: auto;
+      }
+      @media (max-width: 480px) {
+        .upsell-modal-box {
+          padding: 16px 14px 14px;
+          border-radius: 18px;
+        }
+      }
+      .upsell-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background: rgba(255,255,255,0.1);
+        border: none;
+        color: #94a3b8;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s;
+        z-index: 5;
+      }
+      .upsell-close-btn:hover {
+        background: rgba(255,255,255,0.25);
+        color: #ffffff;
+      }
+      .upsell-badge {
+        display: inline-block;
+        background: rgba(245, 158, 11, 0.2);
+        border: 1px solid rgba(245, 158, 11, 0.5);
+        color: #fcd34d;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border-radius: 9999px;
+        margin-bottom: 6px;
+      }
+      .upsell-title {
+        font-size: clamp(17px, 3.8vw, 21px);
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 4px;
+        color: #ffffff;
+      }
+      .upsell-title span {
+        color: #34d399;
+      }
+      .upsell-text {
+        font-size: 11.5px;
+        color: #cbd5e1;
+        line-height: 1.45;
+        margin-bottom: 10px;
+      }
+      .upsell-benefits {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 11.5px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .upsell-benefit-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #e2e8f0;
+      }
+      .upsell-benefit-item strong {
+        color: #ffffff;
+      }
+      .upsell-check-icon {
+        color: #34d399;
+        font-weight: 900;
+        font-size: 12px;
+        flex-shrink: 0;
+      }
+      .upsell-pricing-box {
+        background: rgba(16, 185, 129, 0.12);
+        border: 1px solid rgba(16, 185, 129, 0.35);
+        border-radius: 12px;
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .upsell-pricing-old {
+        font-size: 11px;
+        color: #94a3b8;
+        margin-bottom: 0px;
+      }
+      .upsell-pricing-old s {
+        color: #f87171;
+        font-weight: 700;
+      }
+      .upsell-pricing-current {
+        font-size: 28px;
+        font-weight: 900;
+        font-family: ui-monospace, monospace;
+        color: #34d399;
+        line-height: 1.05;
+      }
+      .upsell-pricing-tag {
+        font-size: 11px;
+        font-weight: 800;
+        color: #fcd34d;
+        text-transform: uppercase;
+        margin-left: 4px;
+      }
+      .upsell-cta-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        width: 100%;
+        background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+        color: #ffffff;
+        font-size: 13.5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        padding: 13px 18px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px -4px rgba(16, 185, 129, 0.5), 0 0 15px rgba(16, 185, 129, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .upsell-cta-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px -4px rgba(16, 185, 129, 0.7);
+      }
+      .upsell-decline-link {
+        display: inline-block;
+        margin-top: 8px;
+        color: #94a3b8;
+        font-size: 11.5px;
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: color 0.2s;
+        padding: 2px;
+      }
+      .upsell-decline-link:hover {
+        color: #ffffff;
+      }
+    </style>
+    <!-- Meta Pixel (MIND.IA) -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2251275608948864');
+      fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel -->
+  </head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=2251275608948864&ev=PageView&noscript=1"/></noscript>
+
+    <!-- 1. BARRA FIXA NO TOPO COM CONTADOR REGRESSIVO REAL -->
+    <div id="top-urgency-bar" role="region" aria-label="Aviso de urgência">
+      <div class="urgency-content">
+        <div>
+          ⏰ <strong>As inscrições do IBGE terminam em 25/11.</strong> Preço de lançamento só até lá.
+        </div>
+        <div class="countdown-boxes">
+          <div class="cd-unit">
+            <span id="cd-days">00</span>
+            <span class="cd-sub">dias</span>
+          </div>
+          <span>:</span>
+          <div class="cd-unit">
+            <span id="cd-hours">00</span>
+            <span class="cd-sub">horas</span>
+          </div>
+          <span>:</span>
+          <div class="cd-unit">
+            <span id="cd-min">00</span>
+            <span class="cd-sub">min</span>
+          </div>
+          <span>:</span>
+          <div class="cd-unit">
+            <span id="cd-sec">00</span>
+            <span class="cd-sub">seg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luzes Ambientes Flutuantes idênticas à referência -->
+    <div class="ambient-orb ambient-orb-1" aria-hidden="true"></div>
+    <div class="ambient-orb ambient-orb-2" aria-hidden="true"></div>
+
+    <!-- 2. HERO -->
+    <section class="hero-section">
+      <div class="hero-bg-img" style="background-image: url('assets/trabalho-campo-ibge.png');" onerror="this.style.backgroundImage='url(https://apostilaibgerecenseador.vercel.app/assets/trabalho-campo-ibge-DpbHMTJd.webp)'"></div>
+      <div class="hero-gradient-overlay"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="container" style="position: relative; z-index: 10;">
+        <div style="margin-bottom: 20px;">
+          <span class="badge-primary animate-pulse-badge">
+            🛡️ CONCURSO IBGE 2026 · RECENSEADOR · CESGRANRIO · 27.279 VAGAS
+          </span>
+        </div>
+
+        <h1 class="hero-title text-gradient-hero">
+          Prepare-se para a vaga de Recenseador do IBGE que paga até R$ 4.370 por mês, e chegue à prova com 500 questões resolvidas
+        </h1>
+
+        <!-- Mockup do material (apostila + celular + tablet) -->
+        <div style="max-width: 780px; margin: 0 auto 32px;">
+          <img
+            src="assets/kit-estudos-ibge-recenseador.png"
+            onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/kit-estudos-ibge-recenseador-CvlSlyRx.webp'"
+            alt="Mockup do material de estudos para Recenseador IBGE"
+            style="width: 100%; height: auto; filter: drop-shadow(0 25px 25px rgba(0,0,0,0.5));"
+            fetchpriority="high"
+          />
+        </div>
+
+        <p style="font-size: 18px; color: rgba(255,255,255,0.9); max-width: 760px; margin: 0 auto 36px; line-height: 1.6;">
+          Apostila completa das 3 matérias do edital, incluindo o conteúdo técnico do Censo Agropecuário, que vale metade da prova. Você ainda leva 500 questões, simulados no estilo Cesgranrio e um cronograma pronto até 31 de janeiro. Feito para quem tem pouco tempo e precisa passar de primeira.
+        </p>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+          <button onclick="scrollToPlanos()" class="btn-green">
+            QUERO COMEÇAR A ESTUDAR HOJE →
+          </button>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 500;">
+            <span>⚡ Acesso imediato</span>
+            <span>·</span>
+            <span>📱 Celular, tablet ou computador</span>
+            <span>·</span>
+            <span>🛡️ Garantia de 15 dias</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. RAIO-X DA PROVA -->
+    <section id="raio-x" class="section-light">
+      <div class="container max-w-4xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light">ESTRUTURA COMPLETA DO EDITAL</span>
+          <h2 class="section-title">
+            Entenda a prova em <span class="text-gradient-red">30 segundos</span>
+          </h2>
+        </div>
+
+        <div class="raiox-grid">
+          <div class="raiox-card">
+            <div class="raiox-num">60</div>
+            <strong>Questões de múltipla escolha</strong>
+            <p style="font-size: 12px; color: var(--muted-foreground); margin-top: 4px;">5 alternativas (A a E)</p>
+          </div>
+          <div class="raiox-card">
+            <div class="raiox-num" style="color: var(--primary);">15</div>
+            <strong>Língua Portuguesa</strong>
+            <p style="font-size: 12px; color: var(--muted-foreground); margin-top: 4px;">Interpretação e gramática</p>
+          </div>
+          <div class="raiox-card">
+            <div class="raiox-num" style="color: var(--primary);">15</div>
+            <strong>Matemática</strong>
+            <p style="font-size: 12px; color: var(--muted-foreground); margin-top: 4px;">Operações e raciocínio</p>
+          </div>
+          <div class="raiox-card highlight">
+            <div class="tag-corner">50% da prova</div>
+            <div class="raiox-num">30</div>
+            <strong>Conhecimentos Técnicos</strong>
+            <p style="font-size: 12px; color: var(--primary); margin-top: 4px; font-weight: 600;">Censo Agropecuário oficial</p>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 32px;">
+          <div class="card-white" style="display: flex; gap: 14px; align-items: flex-start;">
+            <div style="width: 36px; height: 36px; border-radius: 8px; background: #dcfce7; color: #15803d; display: flex; align-items: center; justify-content: center; font-weight: bold;">✓</div>
+            <div>
+              <strong style="font-size: 14px;">Critério para passar</strong>
+              <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 2px;">Mínimo de 18 pontos e pelo menos 1 ponto em cada matéria.</p>
+            </div>
+          </div>
+          <div class="card-white" style="display: flex; gap: 14px; align-items: flex-start;">
+            <div style="width: 36px; height: 36px; border-radius: 8px; background: #e0f2fe; color: #0369a1; display: flex; align-items: center; justify-content: center; font-weight: bold;">🎓</div>
+            <div>
+              <strong style="font-size: 14px;">Escolaridade exigida</strong>
+              <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 2px;">Ensino Fundamental completo.</p>
+            </div>
+          </div>
+          <div class="card-white" style="display: flex; gap: 14px; align-items: flex-start;">
+            <div style="width: 36px; height: 36px; border-radius: 8px; background: #fef3c7; color: #b45309; display: flex; align-items: center; justify-content: center; font-weight: bold;">📅</div>
+            <div>
+              <strong style="font-size: 14px;">Data da prova</strong>
+              <p style="font-size: 13px; color: var(--foreground); font-weight: 700; margin-top: 2px;">31/01/2027</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, var(--red-deep), #0b1e42); color: #ffffff; padding: 24px; border-radius: 16px; text-align: center;">
+          <p style="font-size: 18px; font-weight: 700; color: #ffffff;">
+            Metade da prova sai de uma única apostila técnica. Quem domina essa apostila sai na frente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DOR: VOCÊ SE RECONHECE? -->
+    <section class="section-light-alt">
+      <div class="container max-w-4xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light" style="background: #fee2e2; color: #dc2626;">VOCÊ SE RECONHECE?</span>
+          <h2 class="section-title">
+            Você quer essa vaga, mas ainda não sabe por onde começar?
+          </h2>
+        </div>
+
+        <div class="dores-grid">
+          <div class="speech-bubble">
+            <span class="speech-quote">“</span>
+            <p class="speech-text">Fiz a inscrição, mas ainda não abri nenhum material.</p>
+          </div>
+          <div class="speech-bubble">
+            <span class="speech-quote">“</span>
+            <p class="speech-text">Faz anos que saí da escola. Matemática me trava.</p>
+          </div>
+          <div class="speech-bubble">
+            <span class="speech-quote">“</span>
+            <p class="speech-text">Trabalho o dia todo. Não sei onde encaixar o estudo.</p>
+          </div>
+          <div class="speech-bubble">
+            <span class="speech-quote">“</span>
+            <p class="speech-text">Leio, entendo… e na hora da questão erro.</p>
+          </div>
+          <div class="speech-bubble" style="grid-column: 1 / -1; max-width: 480px; margin: 0 auto; width: 100%;">
+            <span class="speech-quote">“</span>
+            <p class="speech-text">Conhecimentos Técnicos? Nem sei por onde começar.</p>
+          </div>
+        </div>
+
+        <div class="card-white" style="text-align: center; max-width: 680px; margin: 0 auto; border: 2px solid rgba(22, 86, 181, 0.3);">
+          <p style="font-size: 18px; font-weight: 700;">
+            Se você marcou pelo menos uma, o problema não é você. <span class="text-gradient-red">É falta de método.</span> E o Kit entrega esse método pronto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DIFERENCIAL -->
+    <section class="section-dark" style="text-align: center;">
+      <div class="container max-w-3xl">
+        <h2 class="section-title" style="color: #ffffff; margin-bottom: 24px;">
+          Resumo ajuda a lembrar. <span class="text-gradient-hero">Questão é o que aprova.</span>
+        </h2>
+        <p style="font-size: 18px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 36px;">
+          Na prova, ninguém pergunta se você leu o conteúdo. A prova mede se você acerta. Por isso o Kit traz a teoria completa e 500 questões para você treinar até a resposta sair no automático. Assim você chega no dia 31 já tendo visto como a Cesgranrio cobra cada assunto, sem depender de resumo decorado na véspera.
+        </p>
+        <button onclick="scrollToPlanos()" class="btn-green">
+          QUERO O KIT COMPLETO →
+        </button>
+      </div>
+    </section>
+
+    <!-- 6. JORNADA (01 a 05) -->
+    <section id="jornada" class="section-light">
+      <div class="container max-w-4xl">
+        <div style="text-align: center; margin-bottom: 48px;">
+          <span class="badge-light">MÉTODO PASSO A PASSO</span>
+          <h2 class="section-title">
+            Do zero à prova em <span class="text-gradient-red">5 etapas</span>, estudando pelo celular
+          </h2>
+          <p class="section-subtitle">
+            Um caminho pronto para aprender, organizar, praticar, se testar e revisar. É só seguir.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">01</div>
+            <div class="timeline-card">
+              <div class="timeline-action">01 · APRENDA</div>
+              <h3 class="timeline-title">Apostila Completa</h3>
+              <p class="timeline-desc">A teoria das 3 matérias do edital, organizada do básico ao que mais cai, com explicações, tabelas, esquemas e questões de fixação.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">02</div>
+            <div class="timeline-card">
+              <div class="timeline-action">02 · ORGANIZE</div>
+              <h3 class="timeline-title">Cronograma até a prova</h3>
+              <p class="timeline-desc">Um cronograma pronto até 31 de janeiro, com indicação de videoaulas para cada assunto. Você abre e já sabe o que estudar hoje.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">03</div>
+            <div class="timeline-card">
+              <div class="timeline-action">03 · PRATIQUE</div>
+              <h3 class="timeline-title">500 Questões</h3>
+              <p class="timeline-desc">Treine cada assunto até acertar no automático e descubra exatamente onde precisa revisar.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">04</div>
+            <div class="timeline-card">
+              <div class="timeline-action">04 · TESTE-SE</div>
+              <h3 class="timeline-title">Simulados</h3>
+              <p class="timeline-desc">Simulados no formato da prova (15 + 15 + 30) para você chegar no dia 31 sabendo como vai ser.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-badge">05</div>
+            <div class="timeline-card">
+              <div class="timeline-action">05 · REVISE</div>
+              <h3 class="timeline-title">Reta Final</h3>
+              <p class="timeline-desc">Revise os pontos mais cobrados e chegue à prova com segurança, sem estudar tudo de novo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. MATERIAL POR DENTRO COM CARROSSEL AUTOMÁTICO EM LOOPING SEM PARAR -->
+    <section id="material-visual" class="section-light-alt">
+      <div class="container max-w-5xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light">TRANSPARÊNCIA TOTAL</span>
+          <h2 class="section-title">
+            Veja o material <span class="text-gradient-red">por dentro</span>
+          </h2>
+          <p class="section-subtitle">
+            Páginas reais da apostila, exatamente como você recebe.
+          </p>
+        </div>
+
+        <!-- Carrossel Estilo Rolagem Original (3 Páginas Visíveis no Desktop + Centro em Destaque) -->
+        <div class="carousel-wrapper">
+          <div class="carousel-viewport" id="carousel-viewport">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Slides gerados dinamicamente via script com as 7 páginas reais da apostila -->
+            </div>
+          </div>
+
+          <button class="carousel-nav-btn carousel-prev-btn" onclick="prevCarousel()" aria-label="Página anterior">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="carousel-nav-btn carousel-next-btn" onclick="nextCarousel()" aria-label="Próxima página">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+
+          <div class="carousel-dots-container" id="carousel-dots-container"></div>
+        </div>
+
+        <!-- 3 Módulos -->
+        <div style="margin-top: 56px;">
+          <h3 style="text-align: center; font-size: 24px; margin-bottom: 28px;">
+            Conteúdo programático (3 módulos):
+          </h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+            <div class="card-white">
+              <span style="font-size: 11px; font-weight: 800; color: var(--primary); text-transform: uppercase;">15 Questões</span>
+              <h4 style="font-size: 18px; margin: 4px 0 8px;">Módulo I — Língua Portuguesa</h4>
+              <p style="font-size: 13px; color: var(--muted-foreground); line-height: 1.6;">Interpretação e compreensão de textos, ortografia oficial, acentuação gráfica, classes de palavras, pontuação, concordância verbal e nominal, regência e crase.</p>
+            </div>
+            <div class="card-white">
+              <span style="font-size: 11px; font-weight: 800; color: var(--primary); text-transform: uppercase;">15 Questões</span>
+              <h4 style="font-size: 18px; margin: 4px 0 8px;">Módulo II — Matemática</h4>
+              <p style="font-size: 13px; color: var(--muted-foreground); line-height: 1.6;">Operações fundamentais, frações, razão e proporção, regra de três, porcentagem, equações, medidas de tempo, noções de geometria e tabelas.</p>
+            </div>
+            <div class="card-white" style="border: 2px solid var(--primary); background: rgba(22, 86, 181, 0.03);">
+              <span style="font-size: 11px; font-weight: 800; color: var(--primary); text-transform: uppercase;">30 Questões (50%)</span>
+              <h4 style="font-size: 18px; margin: 4px 0 8px;">Módulo III — Conhecimentos Técnicos (Censo Agropecuário)</h4>
+              <p style="font-size: 13px; color: var(--foreground); line-height: 1.6;">Conceitos do 12º Censo Agropecuário, conduta do recenseador, tipos de estabelecimentos, variáveis de coleta, sigilo estatístico e legislação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plataforma Online -->
+    <section class="section-dark" style="text-align: center;">
+      <div class="container max-w-4xl">
+        <h2 class="section-title" style="color: #ffffff; margin-bottom: 12px;">Plataforma online</h2>
+        <p style="font-size: 18px; color: rgba(255,255,255,0.8); max-width: 640px; margin: 0 auto 36px;">
+          Todos os seus materiais organizados em uma área de estudos, acessível pelo celular, tablet ou computador.
+        </p>
+
+        <div style="display: flex; justify-content: center; gap: 36px; margin-bottom: 36px; color: rgba(255,255,255,0.85); font-size: 13px;">
+          <div>💻 Notebook</div>
+          <div>📱 Tablet</div>
+          <div>📲 Celular</div>
+        </div>
+
+        <div style="max-width: 720px; margin: 0 auto 40px;">
+          <img
+            src="assets/mockup-plataforma-ibge-recenseador.png"
+            onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/mockup-plataforma-ibge-recenseador-Cy6er62Y.webp'"
+            alt="Plataforma de estudos IBGE"
+            style="width: 100%; height: auto; filter: drop-shadow(0 25px 25px rgba(0,0,0,0.4));"
+          />
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; text-align: left; max-width: 640px; margin: 0 auto;">
+          <div style="padding: 12px 18px; background: rgba(255,255,255,0.08); border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); display: flex; gap: 10px; align-items: center;">
+            <span style="color: #34d399; font-weight: bold;">✔</span> Apostila Completa — Recenseador
+          </div>
+          <div style="padding: 12px 18px; background: rgba(255,255,255,0.08); border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); display: flex; gap: 10px; align-items: center;">
+            <span style="color: #34d399; font-weight: bold;">✔</span> Lista de 500 Questões
+          </div>
+          <div style="padding: 12px 18px; background: rgba(255,255,255,0.08); border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); display: flex; gap: 10px; align-items: center;">
+            <span style="color: #34d399; font-weight: bold;">✔</span> Simulados Cesgranrio
+          </div>
+          <div style="padding: 12px 18px; background: rgba(255,255,255,0.08); border-radius: 12px; border: 1px solid rgba(255,255,255,0.15); display: flex; gap: 10px; align-items: center;">
+            <span style="color: #34d399; font-weight: bold;">✔</span> Cronograma até 31/01
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PARA QUEM É -->
+    <section class="section-light">
+      <div class="container max-w-3xl">
+        <div style="text-align: center; margin-bottom: 36px;">
+          <span class="badge-light">PERFIL DO CANDIDATO</span>
+          <h2 class="section-title">
+            Esse material é para <span class="text-gradient-red">você que…</span>
+          </h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px;">
+          <div class="card-white" style="display: flex; align-items: center; gap: 14px; padding: 18px 22px;">
+            <span style="width: 28px; height: 28px; border-radius: 9999px; background: #dcfce7; color: #15803d; font-weight: 800; display: flex; align-items: center; justify-content: center; shrink-0: 0;">✓</span>
+            <span style="font-size: 16px; font-weight: 600;">Vai fazer a prova de Recenseador e ainda não começou a estudar</span>
+          </div>
+          <div class="card-white" style="display: flex; align-items: center; gap: 14px; padding: 18px 22px;">
+            <span style="width: 28px; height: 28px; border-radius: 9999px; background: #dcfce7; color: #15803d; font-weight: 800; display: flex; align-items: center; justify-content: center; shrink-0: 0;">✓</span>
+            <span style="font-size: 16px; font-weight: 600;">Está há anos sem estudar e quer um começo simples</span>
+          </div>
+          <div class="card-white" style="display: flex; align-items: center; gap: 14px; padding: 18px 22px;">
+            <span style="width: 28px; height: 28px; border-radius: 9999px; background: #dcfce7; color: #15803d; font-weight: 800; display: flex; align-items: center; justify-content: center; shrink-0: 0;">✓</span>
+            <span style="font-size: 16px; font-weight: 600;">Trabalha ou cuida da casa e estuda quando dá</span>
+          </div>
+          <div class="card-white" style="display: flex; align-items: center; gap: 14px; padding: 18px 22px;">
+            <span style="width: 28px; height: 28px; border-radius: 9999px; background: #dcfce7; color: #15803d; font-weight: 800; display: flex; align-items: center; justify-content: center; shrink-0: 0;">✓</span>
+            <span style="font-size: 16px; font-weight: 600;">Já estuda, mas erra na hora da questão</span>
+          </div>
+          <div class="card-white" style="display: flex; align-items: center; gap: 14px; padding: 18px 22px;">
+            <span style="width: 28px; height: 28px; border-radius: 9999px; background: #dcfce7; color: #15803d; font-weight: 800; display: flex; align-items: center; justify-content: center; shrink-0: 0;">✓</span>
+            <span style="font-size: 16px; font-weight: 600;">Quer uma renda rápida e precisa passar de primeira</span>
+          </div>
+        </div>
+
+        <p style="text-align: center; font-size: 20px; font-weight: 800;">
+          Marcou um item? <span class="text-gradient-red">Esse material é para você.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- 9. VALE A PENA? BENEFÍCIOS DO CARGO -->
+    <section class="section-light-alt">
+      <div class="container max-w-4xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light">REMUNERAÇÃO E OPORTUNIDADE</span>
+          <h2 class="section-title">
+            O que a vaga de <span class="text-gradient-red">Recenseador</span> oferece
+          </h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 24px;">
+          <div class="card-white" style="border: 2px solid #34d399; background: #f0fdf4;">
+            <div style="font-size: 28px; margin-bottom: 6px;">💰</div>
+            <strong style="font-size: 18px; color: #065f46;">Até R$ 4.370 por mês</strong>
+            <p style="font-size: 13px; color: #047857; margin-top: 4px;">(R$ 1.741 fixos + parte variável por produção)</p>
+          </div>
+          <div class="card-white">
+            <div style="font-size: 28px; margin-bottom: 6px;">🍽️</div>
+            <strong style="font-size: 16px;">Auxílio-alimentação</strong>
+            <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 4px;">Benefício mensal</p>
+          </div>
+          <div class="card-white">
+            <div style="font-size: 28px; margin-bottom: 6px;">🚌</div>
+            <strong style="font-size: 16px;">Auxílio-transporte</strong>
+            <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 4px;">Para os deslocamentos de campo</p>
+          </div>
+          <div class="card-white">
+            <div style="font-size: 28px; margin-bottom: 6px;">🎁</div>
+            <strong style="font-size: 16px;">13º salário proporcional</strong>
+            <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 4px;">Garantido ao fim do contrato</p>
+          </div>
+          <div class="card-white">
+            <div style="font-size: 28px; margin-bottom: 6px;">📍</div>
+            <strong style="font-size: 16px;">27.279 vagas</strong>
+            <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 4px;">Em todo o território nacional</p>
+          </div>
+          <div class="card-white">
+            <div style="font-size: 28px; margin-bottom: 6px;">🎓</div>
+            <strong style="font-size: 16px;">Exige apenas Ensino Fundamental</strong>
+            <p style="font-size: 13px; color: var(--muted-foreground); margin-top: 4px;">Conclusão fundamental completa</p>
+          </div>
+        </div>
+
+        <p style="text-align: center; font-size: 12px; color: var(--muted-foreground); font-style: italic;">
+          Vaga temporária, com contratos renováveis conforme o andamento do Censo, segundo o edital.
+        </p>
+      </div>
+    </section>
+
+    <!-- 10. DEPOIMENTOS DE ALUNOS -->
+    <section class="section-light">
+      <div class="container max-w-5xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light">PROVA SOCIAL</span>
+          <h2 class="section-title">
+            O que dizem nossos <span class="text-gradient-red">alunos</span>
+          </h2>
+          <p class="section-subtitle">
+            Veja a experiência de quem já utiliza nossos materiais em sua preparação.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <div class="card-white" style="padding: 10px; overflow: hidden;">
+            <img src="assets/depoimento-1.png" onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/depoimento-1-CC2_BbBb.webp'" alt="Depoimento 1" style="width: 100%; height: auto; border-radius: 10px;">
+          </div>
+          <div class="card-white" style="padding: 10px; overflow: hidden;">
+            <img src="assets/depoimento-2.png" onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/depoimento-2-M61tQeXw.webp'" alt="Depoimento 2" style="width: 100%; height: auto; border-radius: 10px;">
+          </div>
+          <div class="card-white" style="padding: 10px; overflow: hidden;">
+            <img src="assets/depoimento-3.png" onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/depoimento-3-DikQrjJX.webp'" alt="Depoimento 3" style="width: 100%; height: auto; border-radius: 10px;">
+          </div>
+          <div class="card-white" style="padding: 10px; overflow: hidden;">
+            <img src="assets/depoimento-4.png" onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/depoimento-4-Bf58wqSk.webp'" alt="Depoimento 4" style="width: 100%; height: auto; border-radius: 10px;">
+          </div>
+          <div class="card-white" style="padding: 10px; overflow: hidden;">
+            <img src="assets/depoimento-5.png" onerror="this.onerror=null; this.src='https://apostilaibgerecenseador.vercel.app/assets/depoimento-5-Bv8FxXgQ.webp'" alt="Depoimento 5" style="width: 100%; height: auto; border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. PLANOS (id="planos") COMBO PRIMEIRO NO CELULAR -->
+    <section id="planos" class="section-dark">
+      <div class="container max-w-4xl">
+        <div style="text-align: center; margin-bottom: 24px;">
+          <h2 class="section-title" style="color: #ffffff;">
+            Escolha seu plano e comece a estudar em 5 minutos
+          </h2>
+          <div style="display: inline-block; background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); padding: 6px 18px; border-radius: 9999px; font-size: 13px; font-weight: 700; color: #fcd34d; margin-top: 8px;">
+            ⏰ Inscrições até 25/11 · Prova em 31/01/2027 · Preço de lançamento só até 25/11
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- CARD 1: COMBO COMPLETO (⭐ MAIS ESCOLHIDO, PRIMEIRO NO CELULAR) -->
+          <div class="plan-card plan-combo">
+            <div class="selo-mais-escolhido">⭐ MAIS ESCOLHIDO</div>
+            
+            <div>
+              <span style="font-size: 11px; font-weight: 800; letter-spacing: 0.1em; color: #6ee7b7; text-transform: uppercase;">PREPARAÇÃO DEFINITIVA</span>
+              <h3 style="font-size: 22px; color: #ffffff; margin: 4px 0 10px;">COMBO COMPLETO — IBGE RECENSEADOR</h3>
+              
+              <div style="background: rgba(16, 185, 129, 0.15); border-radius: 12px; padding: 10px 14px; margin-bottom: 20px; font-size: 13px; font-weight: 600; color: #a7f3d0;">
+                Por só R$ 18 a mais, você leva tudo o que falta para treinar, revisar e chegar pronto.
+              </div>
+
+              <ul style="list-style: none; font-size: 14px; color: rgba(255,255,255,0.9); line-height: 2; margin-bottom: 20px;">
+                <li>✔ <strong>Apostila Completa:</strong> Português, Matemática e Conhecimentos Técnicos do Censo Agro</li>
+                <li>✔ <strong>500 questões</strong> para treinar cada assunto</li>
+                <li>✔ <strong>Simulados</strong> no padrão da prova (15 + 15 + 30)</li>
+                <li>✔ <strong>Cronograma até 31/01</strong> com indicação de videoaulas</li>
+                <li>✔ <strong>Plataforma online:</strong> celular, tablet ou computador</li>
+                <li>✔ <strong>Acesso imediato</strong></li>
+              </ul>
+
+              <!-- Bônus com preço riscado -->
+              <div style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 14px; padding: 14px; margin-bottom: 24px;">
+                <strong style="color: #fcd34d; font-size: 12px; text-transform: uppercase; display: block; margin-bottom: 6px;">🎁 BÔNUS GRÁTIS ATÉ 25/11</strong>
+                <div style="font-size: 13px; display: flex; justify-content: space-between; margin-bottom: 4px;">
+                  <span>• Edital Verticalizado</span>
+                  <span><s>R$ 27</s> <strong style="color: #6ee7b7;">GRÁTIS</strong></span>
+                </div>
+                <div style="font-size: 13px; display: flex; justify-content: space-between;">
+                  <span>• Acesso Vitalício + Atualizações</span>
+                  <span><s>R$ 37</s> <strong style="color: #6ee7b7;">GRÁTIS</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 20px;">
+              <div style="font-size: 40px; font-weight: 900; color: #ffffff; font-family: ui-monospace, monospace; margin-bottom: 12px;">
+                R$ 37,90 <span style="font-size: 12px; font-family: 'Inter', sans-serif; font-weight: 700; color: #a7f3d0; text-transform: uppercase;">pagamento único</span>
+              </div>
+              <button onclick="buyCombo()" class="btn-green" style="max-width: 100%;">
+                QUERO O COMBO COMPLETO →
+              </button>
+              <p style="font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 10px;">
+                💳 Pix ou cartão · Sem mensalidade · Garantia de 15 dias
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 2: APOSTILA COMPLETA -->
+          <div class="plan-card plan-apostila">
+            <div>
+              <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,255,255,0.6); text-transform: uppercase;">PLANO BÁSICO</span>
+              <h3 style="font-size: 20px; color: #ffffff; margin: 4px 0 10px;">APOSTILA COMPLETA — IBGE RECENSEADOR</h3>
+              <p style="font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 24px;">
+                Para quem quer só a teoria e prefere montar a própria rotina.
+              </p>
+
+              <ul style="list-style: none; font-size: 14px; color: rgba(255,255,255,0.8); line-height: 2.2; margin-bottom: 24px;">
+                <li>✔ <strong>Apostila Completa</strong> das 3 matérias</li>
+                <li>✔ <strong>Material digital</strong> em PDF</li>
+                <li>✔ <strong>Acesso imediato</strong></li>
+              </ul>
+            </div>
+
+            <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+              <div style="font-size: 32px; font-weight: 800; color: #ffffff; font-family: ui-monospace, monospace; margin-bottom: 12px;">
+                R$ 19,90 <span style="font-size: 11px; font-family: 'Inter', sans-serif; font-weight: 600; color: rgba(255,255,255,0.6); text-transform: uppercase;">pagamento único</span>
+              </div>
+              <button onclick="buyApostila()" class="btn-outline-white">
+                QUERO SÓ A APOSTILA →
+              </button>
+              <p style="font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 8px;">
+                Material digital entregue via e-mail
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. GARANTIA 15 DIAS -->
+    <section class="section-light">
+      <div class="container max-w-3xl" style="text-align: center;">
+        <div style="width: 72px; height: 72px; border-radius: 20px; background: rgba(22, 86, 181, 0.1); color: var(--primary); display: inline-flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: 20px;">
+          🛡️
+        </div>
+        <h2 class="section-title">
+          15 dias de garantia <span class="text-gradient-red">incondicional</span>
+        </h2>
+        <p style="font-size: 17px; color: var(--muted-foreground); line-height: 1.7; max-width: 620px; margin: 0 auto;">
+          Estude, resolva as questões, faça os simulados. Se não gostar, devolvemos 100% do seu dinheiro, sem burocracia. Você não arrisca nada. O único jeito de sair perdendo é não começar.
+        </p>
+      </div>
+    </section>
+
+    <!-- 13. COMO FUNCIONA DEPOIS DO PAGAMENTO -->
+    <section class="section-light-alt">
+      <div class="container max-w-4xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light">PASSO A PASSO</span>
+          <h2 class="section-title">
+            Como funciona <span class="text-gradient-red">depois do pagamento</span>
+          </h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+          <div class="card-white" style="text-align: center; padding: 28px;">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: rgba(22, 86, 181, 0.1); color: var(--primary); font-size: 20px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">1</div>
+            <h3 style="font-size: 18px; margin-bottom: 8px;">1. Garanta seu acesso</h3>
+            <p style="font-size: 14px; color: var(--muted-foreground);">Pagamento único e seguro, por Pix ou cartão.</p>
+          </div>
+          <div class="card-white" style="text-align: center; padding: 28px;">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: rgba(22, 86, 181, 0.1); color: var(--primary); font-size: 20px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">2</div>
+            <h3 style="font-size: 18px; margin-bottom: 8px;">2. Receba no e-mail</h3>
+            <p style="font-size: 14px; color: var(--muted-foreground);">O acesso chega na hora.</p>
+          </div>
+          <div class="card-white" style="text-align: center; padding: 28px;">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: rgba(22, 86, 181, 0.1); color: var(--primary); font-size: 20px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">3</div>
+            <h3 style="font-size: 18px; margin-bottom: 8px;">3. Comece hoje</h3>
+            <p style="font-size: 14px; color: var(--muted-foreground);">Abra o cronograma e siga o dia 1.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. FAQ EM ACORDEÃO -->
+    <section id="faq" class="section-light">
+      <div class="container max-w-3xl">
+        <div style="text-align: center; margin-bottom: 40px;">
+          <span class="badge-light">TIRE SUAS DÚVIDAS</span>
+          <h2 class="section-title">Perguntas frequentes</h2>
+        </div>
+
+        <div id="faq-list">
+          <div class="faq-item open">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Dá tempo de estudar até 31 de janeiro?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Dá. O cronograma divide todo o edital semana a semana até a prova. O que não dá é deixar para começar em dezembro.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>O material segue o edital?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Sim. Ele cobre as 3 matérias do cargo de Recenseador: Língua Portuguesa, Matemática e Conhecimentos Técnicos.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Cobre a apostila do Censo Agropecuário?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Sim. O módulo de Conhecimentos Técnicos é baseado no conteúdo do 12º Censo Agropecuário, Florestal e Aquícola, que corresponde a 30 das 60 questões da prova.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Nunca estudei para concurso. Serve para mim?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Serve. A apostila começa do básico e o cronograma mostra exatamente por onde começar.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Como é a prova?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">São 60 questões de múltipla escolha (A a E): 15 de Português, 15 de Matemática e 30 de Conhecimentos Técnicos. Para ser aprovado, é preciso fazer pelo menos 18 pontos e ao menos 1 ponto em cada matéria.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Quanto ganha um Recenseador?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">O edital prevê R$ 1.741 fixos mais uma parte variável por produção, até o máximo de R$ 4.370 por mês.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>A vaga é fixa?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Não. É temporária, com contratos renováveis conforme a necessidade do trabalho do Censo.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Qual escolaridade preciso ter?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Ensino Fundamental completo.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>O material é físico ou digital?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">100% digital. Você estuda pelo celular, tablet ou computador e pode imprimir.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Qual a diferença entre os planos?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">A Apostila traz só a teoria. O Combo Completo traz a apostila mais as 500 questões, os simulados, o cronograma, a plataforma online e os bônus.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>O preço é baixo. Vou receber mesmo?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Vai, na hora, direto no seu e-mail. E você ainda tem 15 dias de garantia.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>É material oficial do IBGE?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Não. É um preparatório independente, sem vínculo com o IBGE ou com a Fundação Cesgranrio.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Quais as formas de pagamento?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Pix ou cartão de crédito. No Pix, o acesso é liberado na hora.</div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+              <span>Tenho garantia?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-body">Sim. São 15 dias. Se não gostar, devolvemos 100% do valor.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. CTA FINAL -->
+    <section class="section-dark" style="text-align: center;">
+      <div class="container max-w-3xl">
+        <h2 class="section-title" style="color: #ffffff; margin-bottom: 20px;">
+          A prova não espera você se sentir pronto.
+        </h2>
+        <p style="font-size: 18px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 36px;">
+          Daqui a menos de 3 meses você vai estar na sala de prova. A pergunta é se vai chegar lá com 500 questões resolvidas ou torcendo para cair o que você leu.
+        </p>
+        <button onclick="scrollToPlanos()" class="btn-green">
+          COMEÇAR MINHA PREPARAÇÃO AGORA →
+        </button>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 14px;">
+          Preço de lançamento até 25/11 · Acesso imediato · Garantia de 15 dias
+        </p>
+      </div>
+    </section>
+
+    <!-- 16. RODAPÉ -->
+    <footer style="background: var(--navy-deep); color: rgba(255,255,255,0.7); padding: 48px 16px; font-size: 13px; line-height: 1.7; border-top: 1px solid rgba(255,255,255,0.1);">
+      <div class="container max-w-4xl" style="text-align: center;">
+        <strong style="color: #ffffff; font-size: 16px; display: block; margin-bottom: 12px;">
+          Preparatório IBGE — Recenseador
+        </strong>
+        <p style="margin-bottom: 16px;">
+          Este material é um preparatório independente voltado ao cargo de Recenseador do IBGE, sem qualquer vínculo institucional com o IBGE ou com a Fundação Cesgranrio. O desempenho do candidato depende de sua preparação individual e do cumprimento das etapas e critérios previstos no edital. Consulte o edital e as retificações oficiais em cesgranrio.org.br.
+        </p>
+        <p style="margin-bottom: 20px; color: rgba(255,255,255,0.5);">
+          Este site não é afiliado ao Facebook™, Instagram™ ou Google™.
+        </p>
+        <div style="margin-bottom: 16px;">
+          <span style="cursor: pointer;">Política de Privacidade</span> · 
+          <span style="cursor: pointer;">Termos de Uso</span> · 
+                    <a href="mailto:suporte@preparatorioibge.com.br" style="color: #60a5fa; text-decoration: none;">Suporte: suporte@preparatorioibge.com.br</a>
+        </div>
+        <p style="color: rgba(255,255,255,0.5);">© 2026 Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- 17. BARRA FLUTUANTE INFERIOR MOBILE -->
+    <div id="mobile-floating-bar">
+      <button onclick="scrollToPlanos()" class="btn-green" style="max-width: 100%; padding: 14px 20px; font-size: 15px;">
+        QUERO COMEÇAR AGORA →
+      </button>
+    </div>
+
+
+    <!-- POPUP DE UPSELL: Disparado ao clicar na oferta da Apostila de R$ 19,90 -->
+    <div id="upsell-modal" class="modal-overlay" onclick="closeUpsellModal(event)">
+      <div class="upsell-modal-box" onclick="event.stopPropagation()">
+        <button class="upsell-close-btn" onclick="closeUpsellModal(event)" aria-label="Fechar" title="Fechar">✕</button>
+
+        <div class="upsell-badge">⚠️ ESPERE! UMA OPORTUNIDADE ÚNICA</div>
+
+        <h3 class="upsell-title">
+          Leve o <span>COMBO COMPLETO</span> por apenas <u style="text-decoration-color: #fcd34d;">R$ 10 a mais!</u>
+        </h3>
+
+        <p class="upsell-text">
+          Você escolheu a <strong>Apostila Básica (R$ 19,90)</strong>. Mas que tal garantir a preparação completa com 500 questões Cesgranrio, simulados e cronograma de R$ 37,90 por <strong>apenas R$ 29,90</strong>?
+        </p>
+
+        <div class="upsell-benefits">
+          <div class="upsell-benefit-item">
+            <span class="upsell-check-icon">✔</span>
+            <span><strong>Apostila Completa:</strong> Português, Matemática e Conhecimentos Técnicos</span>
+          </div>
+          <div class="upsell-benefit-item">
+            <span class="upsell-check-icon">✔</span>
+            <span><strong>500 Questões Cesgranrio</strong> gabaritadas por matéria</span>
+          </div>
+          <div class="upsell-benefit-item">
+            <span class="upsell-check-icon">✔</span>
+            <span><strong>Simulados no formato exato da prova</strong> (15 + 15 + 30)</span>
+          </div>
+          <div class="upsell-benefit-item">
+            <span class="upsell-check-icon">✔</span>
+            <span><strong>Cronograma pronto até 31/01</strong> com indicação de videoaulas</span>
+          </div>
+          <div class="upsell-benefit-item">
+            <span class="upsell-check-icon">✔</span>
+            <span><strong>Acesso à plataforma online:</strong> celular, tablet ou computador</span>
+          </div>
+        </div>
+
+        <div class="upsell-pricing-box">
+          <div class="upsell-pricing-old">
+            De <s>R$ 37,90</s> por apenas:
+          </div>
+          <div class="upsell-pricing-current">
+            R$ 29,90 <span class="upsell-pricing-tag">(só +R$ 10,00)</span>
+          </div>
+          <div style="font-size: 11px; color: #a7f3d0; margin-top: 4px; font-weight: 600;">
+            ⚡ Economia imediata de R$ 8,00 no Combo Completo
+          </div>
+        </div>
+
+        <!-- CTA Principal de Upgrade -->
+        <a id="upsell-accept-btn" href="#" target="_blank" rel="noopener noreferrer" class="upsell-cta-btn" onclick="acceptUpsell(event)">
+          <span>SIM! QUERO O COMBO POR APENAS R$ 29,90</span>
+          <span>→</span>
+        </a>
+
+        <!-- Opção Mínima Logo Abaixo do CTA (conforme solicitado) -->
+        <div>
+          <button id="upsell-decline-btn" class="upsell-decline-link" onclick="declineUpsell()">
+            Não, prefiro a Apostila por R$ 19,90
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Informativo de Checkout para o Combo Normal -->
+    <div id="checkout-modal" class="modal-overlay" onclick="closeModal(event)">
+      <div class="modal-box" onclick="event.stopPropagation()">
+        <h3 style="font-size: 18px; margin-bottom: 6px;">Redirecionando para o Checkout</h3>
+        <p id="modal-plan-name" style="font-size: 14px; font-weight: 700; color: #16a34a; margin-bottom: 16px;"></p>
+        <p style="font-size: 13px; color: #64748b; margin-bottom: 20px;">
+          Você será direcionado para o ambiente seguro de pagamento.
+        </p>
+        <div style="display: flex; gap: 10px;">
+          <button onclick="document.getElementById('checkout-modal').style.display='none'" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; background: #f1f5f9; font-weight: 600; cursor: pointer;">Voltar</button>
+          <a id="modal-checkout-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-green" style="flex: 1; padding: 10px; font-size: 13px; border-radius: 8px; width: auto; max-width: none;">Ir para Pagamento →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS VANILLA PURO (Sem React) -->
+    <script>
+      // 1. CONFIGURAÇÃO DE CHECKOUT (Cakto)
+      const CHECKOUT_COMBO_URL = "https://pay.cakto.com.br/u35zvpv_1314898";        // Combo R$ 37,90
+      const CHECKOUT_COMBO_UPSELL_URL = "https://pay.cakto.com.br/8c69ews";         // Combo no popup R$ 29,90
+      const CHECKOUT_APOSTILA_URL = "https://pay.cakto.com.br/5w2362m";             // Apostila R$ 19,90
+
+      const PLANS = {
+        combo:        { url: CHECKOUT_COMBO_URL,        value: 37.90, name: "Combo Completo IBGE Recenseador" },
+        combo_upsell: { url: CHECKOUT_COMBO_UPSELL_URL, value: 29.90, name: "Combo Completo IBGE Recenseador (Oferta Popup)" },
+        apostila:     { url: CHECKOUT_APOSTILA_URL,     value: 19.90, name: "Apostila Completa IBGE Recenseador" }
+      };
+
+      // Repassa UTMs, fbclid e demais parâmetros do anúncio para o checkout
+      function checkoutUrl(plan) {
+        const u = new URL(PLANS[plan].url);
+        new URLSearchParams(window.location.search).forEach((v, k) => {
+          if (!u.searchParams.has(k)) u.searchParams.set(k, v);
+        });
+        return u.toString();
+      }
+
+      function pixel(type, event, data) {
+        try { if (window.fbq) fbq(type, event, data || {}); } catch (e) {}
+      }
+
+      function pixelPlan(event, plan) {
+        const p = PLANS[plan];
+        pixel('track', event, {
+          value: p.value, currency: 'BRL',
+          content_name: p.name, content_ids: [plan], content_type: 'product'
+        });
+      }
+
+      // Envia para o checkout (mesma aba: melhor no navegador do Instagram/Facebook)
+      function goToCheckout(plan) {
+        pixelPlan('AddToCart', plan);
+        const url = checkoutUrl(plan);
+        setTimeout(() => { window.location.href = url; }, 250);
+      }
+
+      // Clique no Combo Completo (R$ 37,90)
+      function buyCombo() {
+        goToCheckout('combo');
+      }
+
+      // Clique na Apostila (R$ 19,90) -> DISPARA O POPUP DE UPSELL POR R$ 29,90 (+R$ 10,00)
+      function buyApostila() {
+        const modal = document.getElementById('upsell-modal');
+        if (modal) {
+          const btn = document.getElementById('upsell-accept-btn');
+          btn.href = checkoutUrl('combo_upsell');
+          btn.removeAttribute('target');
+          pixel('trackCustom', 'UpsellPopupView', { value: 29.90, currency: 'BRL' });
+          modal.style.display = 'flex';
+        } else {
+          goToCheckout('apostila');
+        }
+      }
+
+      function acceptUpsell(e) {
+        if (e) e.preventDefault();
+        const modal = document.getElementById('upsell-modal');
+        if (modal) modal.style.display = 'none';
+        goToCheckout('combo_upsell');
+      }
+
+      function declineUpsell() {
+        const modal = document.getElementById('upsell-modal');
+        if (modal) modal.style.display = 'none';
+        goToCheckout('apostila');
+      }
+
+      function closeUpsellModal(e) {
+        const modal = document.getElementById('upsell-modal');
+        if (modal) modal.style.display = 'none';
+      }
+
+      // ViewContent: quando a seção de planos aparece na tela (1x por visita)
+      (function () {
+        const planos = document.getElementById('planos');
+        if (!planos || !('IntersectionObserver' in window)) return;
+        const obs = new IntersectionObserver((entries) => {
+          if (entries.some(en => en.isIntersecting)) {
+            pixel('track', 'ViewContent', {
+              content_name: 'Planos IBGE Recenseador', content_ids: ['combo', 'apostila'],
+              content_type: 'product', value: 37.90, currency: 'BRL'
+            });
+            obs.disconnect();
+          }
+        }, { threshold: 0.3 });
+        obs.observe(planos);
+      })();
+
+      function closeModal(e) {
+        document.getElementById('checkout-modal').style.display = 'none';
+      }
+
+
+      // 2. ROLAGEM SUAVE
+      function scrollToPlanos() {
+        const el = document.getElementById('planos');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // 3. CONTADOR REGRESSIVO REAL ATÉ 25/11/2026 ÀS 23:59:59 (BRASÍLIA UTC-3)
+      const TARGET_TIME = new Date('2026-11-25T23:59:59-03:00').getTime();
+
+      function updateCountdown() {
+        const now = Date.now();
+        const diff = TARGET_TIME - now;
+
+        if (diff <= 0) {
+          const bar = document.getElementById('top-urgency-bar');
+          if (bar) bar.style.display = 'none';
+          document.body.style.paddingTop = '0px';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        const pad = (n) => String(n).padStart(2, '0');
+        document.getElementById('cd-days').innerText = pad(days);
+        document.getElementById('cd-hours').innerText = pad(hours);
+        document.getElementById('cd-min').innerText = pad(minutes);
+        document.getElementById('cd-sec').innerText = pad(seconds);
+      }
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+
+      // 4. CARROSSEL ESTILO ROLAGEM ORIGINAL + AUTOMÁTICO SEM PARAR (3 PÁGINAS NO DESKTOP + CENTRO EM DESTAQUE)
+      const CAROUSEL_ITEMS = [
+        {
+          src: 'assets/material-ibge-recenseador-1.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-1-C0924cRL.webp',
+          title: 'Língua Portuguesa: Compreensão e Interpretação'
+        },
+        {
+          src: 'assets/material-ibge-recenseador-2.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-2-CubIhV9k.webp',
+          title: 'Língua Portuguesa: Verbos e Tempos Verbais'
+        },
+        {
+          src: 'assets/material-ibge-recenseador-3.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-3-DPQUVV0W.webp',
+          title: 'Língua Portuguesa: Regência e Crase'
+        },
+        {
+          src: 'assets/material-ibge-recenseador-4.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-4-CfvO2h5A.webp',
+          title: 'Matemática: Porcentagem e Proporção'
+        },
+        {
+          src: 'assets/material-ibge-recenseador-5.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-5-Cl2I4Kiq.webp',
+          title: 'Conhecimentos Técnicos: Censo Agropecuário'
+        },
+        {
+          src: 'assets/material-ibge-recenseador-6.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-6-BLa1WSWZ.webp',
+          title: 'Conhecimentos Técnicos: Coleta e Legislação'
+        },
+        {
+          src: 'assets/material-ibge-recenseador-7.png',
+          fallback: 'https://apostilaibgerecenseador.vercel.app/assets/material-ibge-recenseador-7-DQodN8H1.webp',
+          title: 'Questões Cesgranrio com Gabarito Comentado'
+        }
+      ];
+
+      const TOTAL_ITEMS = CAROUSEL_ITEMS.length; // 7
+      let currentIndex = TOTAL_ITEMS; // Inicia no set central (slide 7)
+      let autoPlayInterval = null;
+      let isTransitioning = false;
+
+      function renderCarouselTrack() {
+        const track = document.getElementById('carousel-track');
+        const dotsContainer = document.getElementById('carousel-dots-container');
+        if (!track) return;
+
+        // Gerar 3 cópias completas para rolagem infinita e fluida (total 21 slides)
+        let html = '';
+        for (let set = 0; set < 3; set++) {
+          CAROUSEL_ITEMS.forEach((item, idx) => {
+            const pageNum = idx + 1;
+            const slideGlobalIdx = set * TOTAL_ITEMS + idx;
+            html += `
+              <div class="carousel-slide-item" data-index="${slideGlobalIdx}" onclick="goToSlideIndex(${slideGlobalIdx})">
+                <div class="carousel-card">
+                  <img src="${item.src}" onerror="this.onerror=null; this.src='${item.fallback}'" alt="${item.title}" loading="lazy">
+                  <div class="carousel-caption-tag">
+                    Página ${pageNum} de ${TOTAL_ITEMS} — ${item.title}
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+        }
+        track.innerHTML = html;
+
+        // Gerar 7 dots de navegação
+        if (dotsContainer) {
+          dotsContainer.innerHTML = CAROUSEL_ITEMS.map((_, i) => `
+            <button class="carousel-dot-btn ${i === 0 ? 'active' : ''}" onclick="goToOriginalSlide(${i})" aria-label="Ir para página ${i + 1}"></button>
+          `).join('');
+        }
+
+        // Posicionar inicialmente no meio sem animação
+        requestAnimationFrame(() => {
+          updateCarousel(false);
+        });
+      }
+
+      function updateCarousel(animate = true) {
+        const track = document.getElementById('carousel-track');
+        const viewport = document.getElementById('carousel-viewport');
+        if (!track || !viewport) return;
+
+        const slides = track.querySelectorAll('.carousel-slide-item');
+        if (!slides.length) return;
+
+        const targetSlide = slides[currentIndex];
+        if (!targetSlide) return;
+
+        // Atualizar classes visuais (destaque da página central)
+        slides.forEach((slide, idx) => {
+          if (idx === currentIndex) {
+            slide.classList.add('active-center');
+          } else {
+            slide.classList.remove('active-center');
+          }
+        });
+
+        // Calcular alinhamento central milimétrico no viewport
+        const viewportWidth = viewport.offsetWidth;
+        const slideOffsetLeft = targetSlide.offsetLeft;
+        const slideWidth = targetSlide.offsetWidth;
+        const centerOffset = (viewportWidth / 2) - (slideOffsetLeft + slideWidth / 2);
+
+        if (animate) {
+          track.style.transition = 'transform 0.65s cubic-bezier(0.25, 1, 0.5, 1)';
+        } else {
+          track.style.transition = 'none';
+        }
+
+        track.style.transform = `translateX(${centerOffset}px)`;
+
+        // Atualizar dots
+        const originalIndex = currentIndex % TOTAL_ITEMS;
+        const dots = document.querySelectorAll('.carousel-dot-btn');
+        dots.forEach((dot, i) => {
+          if (i === originalIndex) dot.classList.add('active');
+          else dot.classList.remove('active');
+        });
+      }
+
+      function nextCarousel() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex++;
+        updateCarousel(true);
+
+        setTimeout(() => {
+          // Se passou do segundo set, reposiciona sem piscar para o set equivalente no meio
+          if (currentIndex >= TOTAL_ITEMS * 2) {
+            currentIndex = TOTAL_ITEMS + (currentIndex % TOTAL_ITEMS);
+            updateCarousel(false);
+          }
+          isTransitioning = false;
+        }, 660);
+      }
+
+      function prevCarousel() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex--;
+        updateCarousel(true);
+
+        setTimeout(() => {
+          // Se desceu antes do set central, reposiciona sem piscar
+          if (currentIndex < TOTAL_ITEMS) {
+            currentIndex = TOTAL_ITEMS * 2 - 1;
+            updateCarousel(false);
+          }
+          isTransitioning = false;
+        }, 660);
+      }
+
+      function goToSlideIndex(idx) {
+        currentIndex = idx;
+        updateCarousel(true);
+        resetAutoPlay();
+      }
+
+      function goToOriginalSlide(idx) {
+        currentIndex = TOTAL_ITEMS + idx;
+        updateCarousel(true);
+        resetAutoPlay();
+      }
+
+      function startAutoPlay() {
+        stopAutoPlay();
+        autoPlayInterval = setInterval(() => {
+          nextCarousel();
+        }, 2800); // Rolagem contínua automática a cada 2.8 segundos sem parar
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayInterval) {
+          clearInterval(autoPlayInterval);
+          autoPlayInterval = null;
+        }
+      }
+
+      function resetAutoPlay() {
+        stopAutoPlay();
+        startAutoPlay();
+      }
+
+      // Suporte a Touch Swipe no celular
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      const viewportEl = document.getElementById('carousel-viewport');
+      if (viewportEl) {
+        viewportEl.addEventListener('mouseenter', stopAutoPlay);
+        viewportEl.addEventListener('mouseleave', startAutoPlay);
+
+        viewportEl.addEventListener('touchstart', (e) => {
+          touchStartX = e.changedTouches[0].screenX;
+          stopAutoPlay();
+        }, { passive: true });
+
+        viewportEl.addEventListener('touchend', (e) => {
+          touchEndX = e.changedTouches[0].screenX;
+          const diff = touchStartX - touchEndX;
+          if (diff > 50) {
+            nextCarousel();
+          } else if (diff < -50) {
+            prevCarousel();
+          }
+          startAutoPlay();
+        }, { passive: true });
+      }
+
+      window.addEventListener('resize', () => {
+        updateCarousel(false);
+      });
+
+      // Inicializa o carrossel no carregamento
+      renderCarouselTrack();
+      startAutoPlay();
+
+      // 5. FAQ ACCORDION
+      function toggleFaq(btn) {
+        const item = btn.parentElement;
+        item.classList.toggle('open');
+      }
+
+      // 6. BARRA FLUTUANTE INFERIOR MOBILE
+      window.addEventListener('scroll', () => {
+        const floatingBar = document.getElementById('mobile-floating-bar');
+        if (window.scrollY > 400) {
+          floatingBar.classList.add('show');
+        } else {
+          floatingBar.classList.remove('show');
+        }
+      }, { passive: true });
+    </script>
+  </body>
+</html>
