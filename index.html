@@ -1864,7 +1864,12 @@
       }
 
       // Envia para o checkout (mesma aba: melhor no navegador do Instagram/Facebook)
+      // Trava contra clique duplo: 1 AddToCart e 1 ida ao checkout por clique
+      let goingToCheckout = false;
+      window.addEventListener('pageshow', () => { goingToCheckout = false; });
       function goToCheckout(plan) {
+        if (goingToCheckout) return;
+        goingToCheckout = true;
         pixelPlan('AddToCart', plan);
         const url = checkoutUrl(plan);
         setTimeout(() => { window.location.href = url; }, 250);
